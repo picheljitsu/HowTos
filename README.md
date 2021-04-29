@@ -10,3 +10,10 @@ service restart rpcbind
 systemctl restart nfs-kernel-server
 ```
 In vSphere add /mnt/share and server IP
+
+Powershell manage USB devices
+
+```
+#Get the Generic USB Device whre the status is OK
+$((Get-PnpDevice).where({ $_.FriendlyName -match  'Generic USB' -AND $($_.Status -eq 'OK') })
+```
