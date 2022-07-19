@@ -1,5 +1,5 @@
 # How-Tos
-A random collection of HowToDo's since I work with many different platforms and languages.
+A random collection of How-To's.
 
 ## Kali - Change User-Agent for web-based scripting tools
 
