@@ -1,8 +1,41 @@
-# HowTos
-Just a rando collection of HowToDo's since I work with many different platforms and languages.
+# How-Tos
+A random collection of HowToDo's since I work with many different platforms and languages.
 
+## Kali - Change User-Agent for web-based scripting tools
 
-## Kali export NFS for vsphere
+### Apt Package Manager
+
+```
+vi /etc/apt/apt.conf.d/99user-agent
+```
+
+```
+Acquire
+{
+  http::User-Agent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36";
+};
+```
+### Curl
+
+```
+vi ~/.curlrc
+```
+
+```
+user-agent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+```
+
+### Wget
+
+```
+vi ~/.wgetrc
+```
+
+```
+header = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+```
+
+## Kali - export NFS for vsphere
 
 ```
 mkdir /mnt/share
