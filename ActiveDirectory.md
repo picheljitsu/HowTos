@@ -1,5 +1,7 @@
 
-# Domain Trust Map
+# Mapping
+
+## Trusts
 
 ```
 Install-Module ADEssentials
